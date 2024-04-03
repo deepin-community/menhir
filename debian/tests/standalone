@@ -1,0 +1,21 @@
+#!/bin/sh -e
+
+this=standalone
+indir=debian/tests/calc
+outdir=${ADT_ARTIFACTS:-/tmp}/${this}
+mkdir -p ${outdir}
+
+cp ${indir}/* ${outdir}
+cd ${outdir}
+echo "* compiling to bytecode"
+make --quiet byte
+echo "* running bytecode"
+[ $(echo "(1 + 2 * 10) * 2" | ./calc.byte) -eq '42' ]
+
+if [ -x /usr/bin/ocamlopt ]
+then
+    echo "* compiling to native code"
+    make --quiet native
+    echo "* running native code"
+    [ $(echo "(1 + 2 * 10) * 2" | ./calc.native) -eq '42' ]
+fi

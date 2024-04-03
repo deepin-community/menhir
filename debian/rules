@@ -1,4 +1,10 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+include /usr/share/ocaml/ocamlvars.mk
 
 %:
-	dh $@
+	dh $@ --with ocaml --buildsystem ocaml_dune
+
+execute_before_dh_auto_build:
+	make -C doc

@@ -1,0 +1,5 @@
+Tests: standalone
+Depends: menhir, ocaml-findlib, ocaml, ocamlbuild
+
+Tests: library
+Depends: libmenhir-ocaml-dev, menhir, ocaml-findlib, ocaml, ocamlbuild
