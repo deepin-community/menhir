@@ -1,0 +1,8 @@
+menhir (20200123-2) unstable; urgency=medium
+
+  * As of this version, the coq-menhirlib directory is excluded from the
+  source of menhir. Instead, it will be packaged as an independent source
+  package, in order to get avoid that menhir build-depends on coq.
+
+ -- Ralf Treinen <treinen@debian.org>  Thu, 27 Feb 2020 22:12:34 +0100
+

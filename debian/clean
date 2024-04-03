@@ -1,0 +1,13 @@
+doc/*.png
+doc/manual.aux
+doc/manual.bbl
+doc/manual.blg
+doc/manual.haux
+doc/manual.html
+doc/manual.htoc
+doc/manual.image.out
+doc/manual.image.tex
+doc/manual.log
+doc/manual.out
+doc/manual.pdf
+doc/manual.toc

@@ -1,0 +1,12 @@
+Document: menhir
+Title: Menhir Reference Manual
+Author: François Pottier and Yann Régis-Gianas
+Abstract: This reference manual explains how to use Menhir, a parser generator for the OCaml programming language.
+Section: Programming/OCaml
+
+Format: PDF
+Files: /usr/share/doc/menhir/manual.pdf.gz
+
+Format: HTML
+Files: /usr/share/doc/menhir/manual.html
+Index: /usr/share/doc/menhir/manual.html

@@ -1,22 +1,44 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: menhir
+Upstream-Contact: François Pottier <Francois.Pottier@inria.fr>
+# Those files aren't source: they get built!
+Files-Excluded: doc/manual.pdf doc/manual.html doc/manual*.png
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
+Copyright: 2005-2017, Inria
+License: GPL-2
+
+Files: src/standard.mly lib/*.ml lib/*.mli
+Copyright: 2005-2019, Inria
+License: LGPL-2-exception
+
+Files: debian/tests/calc/* debian/tests/calc-inspection/*
+Copyright: 2005-2017, Inria
+License: GPL-2
+
+License: GPL-2
+ This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+ the Free Software Foundation; version 2 of the License.
  .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ On a debian system, the complete license can be found in the file
+ /usr/share/common-licenses/GPL-2.
+
+License: LGPL-2-exception
+ The Library is distributed under the terms of the GNU Library General
+ Public License version 2 which can be found in
+ /usr/share/common-licenses/LGPL-2.
  .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
- .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ As a special exception to the GNU Library General Public License, you
+ may link, statically or dynamically, a "work that uses the Library"
+ with a publicly distributed version of the Library to produce an
+ executable file containing portions of the Library, and distribute
+ that executable file under terms of your choice, without any of the
+ additional requirements listed in clause 6 of the GNU Library General
+ Public License.  By "a publicly distributed version of the Library",
+ we mean either the unmodified Library as distributed by INRIA, or a
+ modified version of the Library that is distributed under the
+ conditions defined in clause 3 of the GNU Library General Public
+ License.  This exception does not however invalidate any other reasons
+ why the executable file might be covered by the GNU Library General
+ Public License.
